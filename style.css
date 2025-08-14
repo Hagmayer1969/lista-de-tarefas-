@@ -1,61 +1,28 @@
 * {
-    margin: 0;
-    box-sizing: border-box;
-    
+  margin: 0;
+  box-sizing: border-box;
 }
-
 body {
-    background-color: rgb(60, 10, 88);
-    min-height: 100vh
+  min-height: 100vh;
 }
-
 header {
-    background-color: blueviolet;
-    min-width: 40%;
-    place-items: center;
-    display: grid;
-
+  background-color: rgb(101, 107, 8);
+  text-align: center;
+  color: white;
+  padding: 30px;
 }
-
-p {
-    font-size: 30px;
-    color: aliceblue;
+.container {
+  background-color: rgb(196, 212, 104);
 }
-
-.lista {
-    background-color: rgb(179, 97, 218);
-    display: grid;
-    place-items: center;
-    margin: 5px;
-    padding: 200px;
-    font-size: 50px;
-    color: antiquewhite;
-    border-radius: 10px;
-
-
-}
-
-.listau {
-    place-items: center;
-    display: grid;
-    margin: 30px;
-}
-
 .rodape {
-    background-color: rgb(164, 78, 235);
-    padding: 15px;
-    margin: 160px 0px 0px 0px;
+  background-color: rgb(101, 107, 8);
+  padding: 14px;
+}
+footer {
+display: auto;    
 }
 
-input {
-    min-width: 80%;
-    border-radius: 9px;
-    padding: 10px;
-}
-
-button {
-    min-width: 18%;
-    border-radius: 9px;
-    padding: 10px;
-    font-size: 15px;
+main {
+  font-size: 30px;
+  min-height: 80vh;
 }
