@@ -1,28 +1,159 @@
+/* Reset global para garantir consistência entre navegadores */
 * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
+
+/* Configuração do body com design simples */
 body {
   min-height: 100vh;
-}
-header {
-  background-color: rgb(101, 107, 8);
-  text-align: center;
-  color: white;
-  padding: 30px;
-}
-.container {
-  background-color: rgb(196, 212, 104);
-}
-.rodape {
-  background-color: rgb(101, 107, 8);
-  padding: 14px;
-}
-footer {
-display: auto;    
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f5f5;
+  display: flex;
+  flex-direction: column;
 }
 
+/* Header simples */
+header {
+  background: #333;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+/* Container principal centralizado */
+.container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: rgb(85, 84, 82);
+}
+
+/* Área principal com design card simples */
 main {
-  font-size: 30px;
-  min-height: 80vh;
+  background: rgb(172, 170, 170);
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  min-width: 400px;
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Lista de tarefas simples */
+main ul {
+  list-style: none;
+  margin-bottom: 20px;
+  min-height: 300px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+/* Estilo simples para cada item da lista */
+main ul li {
+  background: #f7f3f3;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 4px;
+  border-left: 3px solid #262829;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Footer simples */
+.rodape {
+  background: #333;
+  padding: 20px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Input simples */
+footer input {
+  flex: 1;
+  padding: 10px 15px;
+  border: 1px solid #faf5f5;
+  border-radius: 4px;
+  font-size: 1rem;
+  outline: none;
+}
+
+footer input:focus {
+  border-color: #f3f4f5;
+}
+
+footer input::placeholder {
+  color: #999;
+}
+
+/* Botão simples */
+footer button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background: #58595a;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  min-width: 100px;
+}
+
+footer button:active {
+  background: #1871d1;
+}
+
+/* Scrollbar simples */
+main ul::-webkit-scrollbar {
+  width: 6px;
+}
+
+main ul::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+main ul::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 3px;
+}
+
+/* Responsividade simples */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  main {
+    min-width: 300px;
+    margin: 0 10px;
+    padding: 20px;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  footer input {
+    width: 100%;
+  }
+
+  footer button {
+    width: 100%;
+  }
 }
